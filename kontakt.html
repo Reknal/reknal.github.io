@@ -6,14 +6,16 @@
     <title>Virtus.Pro</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <meta name="description" content="Virtus pro, esport cs team" />
     <meta name="keywords" content="VIRTUS,PRO,VIRTUSPRO,PRO,CS,TEAM,NEO,PASHA,BYALI,KUBEN,TAZ,SNAX" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <link href="https://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="pingendo.css" rel="stylesheet" type="text/css" />
     <link href="./main.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/vue@2.0.3/dist/vue.js"></script>
 </head>
 
 <body>
@@ -68,6 +70,17 @@
             </div>
         </div>
     </div>
+    <!--<div class="section">
+        <div class="container">
+            <div class="row">
+                <div id="app-7" class="col-xs-12">
+                    <ol>
+                        <todo-item v-for="todo in todos" v-bind:todo="todo"></todo-item>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>-->
 </body>
 
 <script>
@@ -86,5 +99,24 @@
     ga('create', 'UA-86167849-1', 'auto');
     ga('send', 'pageview');
 </script>
+
+<!--<script>
+    Vue.component('todo-item', {
+        props: ['todo'],
+        template: '<li>{{ todo.text }}</li>'
+    })
+    var app7 = new Vue({
+        el: '#app-7',
+        data: {
+            todos: [{
+                text: 'Learn JavaScript'
+            }, {
+                text: 'Learn Vue'
+            }, {
+                text: 'Build something awesome'
+            }]
+        }
+    })
+</script>-->
 
 </html>
