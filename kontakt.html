@@ -1,25 +1,23 @@
-<!DOCTYPE html>
-
-<html lang="pl-PL">
+<html>
 
 <head>
     <title>Virtus.Pro</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Virtus pro, esport cs team" />
-    <meta name="keywords" content="VIRTUS,PRO,VIRTUSPRO,PRO,CS,TEAM,NEO,PASHA,BYALI,KUBEN,TAZ,SNAX" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-    <link href="https://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet" type="text/css" />
-    <link href="pingendo.css" rel="stylesheet" type="text/css" />
-    <link href="./main.css" rel="stylesheet" type="text/css" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Virtus pro, esport cs team">
+    <meta name="keywords" content="VIRTUS,PRO,VIRTUSPRO,PRO,CS,TEAM,NEO,PASHA,BYALI,KUBEN,TAZ,SNAX">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="pingendo.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" rel="stylesheet" type="text/css">
+    <link href="./main.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="https://unpkg.com/vue@2.0.3/dist/vue.js"></script>
+    <!--<script type="text/javascript" src="https://unpkg.com/vue@2.0.3/dist/vue.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert-dev.min.js"></script>
 </head>
 
 <body>
-
     <div class="navbar navbar-default navbar-static-top">
         <div class="container">
             <ul class="nav navbar-nav navbar-right">
@@ -42,9 +40,34 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
+                    <h1>Wyślij wiadomość</h1>
+                    <form role="form">
+                        <div class="form-group">
+                            <label class="control-label" for="firstnameInput">Imię</label>
+                            <input class="form-control" id="firstnameInput" placeholder="Wprowadz imię" type="text" required="true"></div>
+                        <div class="form-group">
+                            <label class="control-label" for="lastnameInput">Nazwisko</label>
+                            <input class="form-control" id="lastnameInput" placeholder="Wprowadź nazwisko" type="text" required="true">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Wiadomość</label>
+                            <textarea id="messageTextarea" class="form-control" placeholder="Wprowadź wiadomość" required="true"></textarea>
+                        </div>
+                        <button id="sendButton" type="submit" class="btn btn-default">Wyślij</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
                     <h1>Virtus.Pro facebook&nbsp;</h1>
                     <p class="text-justify">Virtus.pro is always open for any cooperation, proposals, comments and suggestions in the fields of marketing, media, technical components and anything connected with our huge project. You may contact us via email, we will gladly answer
-                        and do our best to help. Virtus.pro is looking forward for an amazing collaboration!&nbsp;<br><br>Więcej na https://www.facebook.com/www.virtus.pro/</p>
+                        and do our best to help. Virtus.pro is looking forward for an amazing collaboration!&nbsp;
+                        <br>
+                        <br>Więcej na https://www.facebook.com/www.virtus.pro/</p>
                 </div>
             </div>
         </div>
@@ -54,8 +77,10 @@
             <div class="row">
                 <div class="col-md-12">
                     <h1>Email</h1>
-                    <p>&nbsp;od@virtus.pro - Olga Dunaeva, Event Manager and work with sponsors&nbsp;<br>fuki@virtus.pro - Andrey Kirukin, Editor-in-chief&nbsp;
-                        <br>tech@virtus.pro - Yuri Timofeev, Technical assistance&nbsp;<br>diver@virtus.pro - Sergey Pisotsky, Teams Manager</p>
+                    <p>&nbsp;od@virtus.pro - Olga Dunaeva, Event Manager and work with sponsors&nbsp;
+                        <br>fuki@virtus.pro - Andrey Kirukin, Editor-in-chief&nbsp;
+                        <br>tech@virtus.pro - Yuri Timofeev, Technical assistance&nbsp;
+                        <br>diver@virtus.pro - Sergey Pisotsky, Teams Manager</p>
                 </div>
             </div>
         </div>
@@ -63,10 +88,18 @@
     <div class="section">
         <div class="container">
             <div class="row text-center">
-                <div class="col-xs-3 text-center"> <a><i class="fa fa-5x fa-fw fa-instagram"></i></a> </div>
-                <div class="col-xs-3"> <a><i class="fa fa-5x fa-fw fa-twitter"></i></a> </div>
-                <div class="col-xs-3"> <a><i class="fa fa-5x fa-fw fa-facebook"></i></a> </div>
-                <div class="col-xs-3 text-center"> <a><i class="fa fa-5x fa-fw fa-github"></i></a> </div>
+                <div class="col-xs-3 text-center">
+                    <a><i class="fa fa-5x fa-fw fa-instagram"></i></a>
+                </div>
+                <div class="col-xs-3">
+                    <a><i class="fa fa-5x fa-fw fa-twitter"></i></a>
+                </div>
+                <div class="col-xs-3">
+                    <a><i class="fa fa-5x fa-fw fa-facebook"></i></a>
+                </div>
+                <div class="col-xs-3 text-center">
+                    <a><i class="fa fa-5x fa-fw fa-github"></i></a>
+                </div>
             </div>
         </div>
     </div>
@@ -81,26 +114,24 @@
             </div>
         </div>
     </div>-->
-</body>
 
-<script>
-    (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-    ga('create', 'UA-86167849-1', 'auto');
-    ga('send', 'pageview');
-</script>
-
-<!--<script>
+        ga('create', 'UA-86167849-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!--<script>
     Vue.component('todo-item', {
         props: ['todo'],
         template: '<li>{{ todo.text }}</li>'
@@ -118,5 +149,19 @@
         }
     })
 </script>-->
+    <script>
+        $(document).ready(function() {
+            $('form').submit(function(e) {
+                e.preventDefault();
+                swal("Brawo!", "Wiadomość została wysłana!", "success");
+                $('#firstnameInput').val('');
+                $('#lastnameInput').val('');
+                $('#messageTextarea').val('');
+            });
+        });
+    </script>
+
+
+</body>
 
 </html>
